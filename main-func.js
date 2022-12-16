@@ -80,9 +80,13 @@ function getPlayerChoiceClick() {
 
     for (let i = 0; i<rps_button.length; i++) {
         rps_button[i].addEventListener('click', function(e) {
-            let el = rps_button[i];
-            el.classList.add('marked');
 
+            for (let j = 0; j<rps_button.length; j++) {
+                rps_button[j].classList.remove('marked');
+            }
+            
+            rps_button[i].classList.add('marked');
+            
         });
     }
 
