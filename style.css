@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&display=swap');
+
+* {
+    border: solid 1px red;
+}
+
+body {
+    background: linear-gradient(176deg,rgb(18,24,27) 50%,rgb(32,39,55) 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-title-container {
+    color: white;
+    font-size: 3.3rem;
+    display: flex;
+    justify-content: center;}
+
+.main-title {
+    margin: 5rem;
+}
+
+.selection-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*  */
+.player-selection-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 100px;
+    
+}
+
+.player-rock-container {
+    flex: 1;
+}
+
+/* --------------------- ROCK --------------------- */
+.rock-img {
+
+}
+
+.rock-img > img {
+    width: 200px;
+}
+
+.rock-title {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+
+/* --------------------- PAPER --------------------- */
+.paper-img {
+
+}
+
+.paper-img > img {
+    width: 200px;
+}
+
+.paper-title {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+/* --------------------- SCISSORS --------------------- */
+.scissors-img {
+
+}
+
+.scissors-img > img {
+    width: 200px;
+}
+
+.scissors-title {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+/* ---------------------------------------------------- */
+
+.title-img {
+    color: white;
+    text-align: center;
+}
+
+
+
+
+.player-paper-container {
+    flex: 1;
+}
+
+.player-scissors-container {
+    flex: 1;
+}
