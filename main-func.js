@@ -72,7 +72,18 @@ function game(){
 
 }
 
-for (let i = 2; i <= 10; i = i + 2) {
+function getPlayerChoiceClick() {
     
-    
+
+    let playerSelect;
+    let loop = new Boolean(true);
+
+    while(loop){
+        if(playerSelect == 'rock' || playerSelect == 'paper' || playerSelect == 'scissors') {
+            loop = false;
+            return playerSelect;
+        }
+        playerSelect = prompt("ERROR! Enter again your choice (rock/paper/scissors):");
+        playerSelect = playerSelect.toLowerCase();
+    }
 }
