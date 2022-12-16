@@ -1,3 +1,4 @@
+
 function getComputerChoice() {
     let rand = Math.floor(Math.random() * (3-1+1)) + 1;
     if(rand == 1){
@@ -73,17 +74,30 @@ function game(){
 }
 
 function getPlayerChoiceClick() {
-    
 
-    let playerSelect;
-    let loop = new Boolean(true);
+    const rps_button = document.querySelectorAll('[data-element-id="1"]');
+    let whatIsMarked = "";
 
-    while(loop){
-        if(playerSelect == 'rock' || playerSelect == 'paper' || playerSelect == 'scissors') {
-            loop = false;
-            return playerSelect;
-        }
-        playerSelect = prompt("ERROR! Enter again your choice (rock/paper/scissors):");
-        playerSelect = playerSelect.toLowerCase();
+    for (let i = 0; i<rps_button.length; i++) {
+        rps_button[i].addEventListener('click', function(e) {
+            let el = rps_button[i];
+            el.classList.add('marked');
+
+        });
     }
+
+    // rock_button.addEventListener('click', function(e) {
+    //     if(whatIsMarked != "rock") {
+    //         paper_button.classList.remove('marked');
+    //         paper_button.classList.add('unmarked');
+    //         scissors_button.classList.remove('marked');
+    //         scissors_button.classList.add('unmarked');
+    //         console.log("Clicked rock!");
+    //     } 
+    //     whatIsMarked = "rock";
+    //     rock_button.classList.add('marked');
+    // });
+
+
+
 }
