@@ -60,7 +60,7 @@
 }
 
 .marked {
-    border-color: blue;
+    background-color: rgb(58, 129, 196);
 }
 
 .unmarked {
