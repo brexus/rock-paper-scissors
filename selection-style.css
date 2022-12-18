@@ -1,5 +1,5 @@
 .selection-container {
-    margin-top: 10px;
+    margin-top: 25px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -47,6 +47,7 @@
 .rps-img > img {
     width: 120px;
     height: 120px;
+    object-fit: contain;
     
 }
 

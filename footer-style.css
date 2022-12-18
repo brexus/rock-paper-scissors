@@ -32,9 +32,6 @@ a:active {
     padding: 5px;
     width: 22px;
 }
-.small-logos:hover {
-
-}
 
 .links-footer > a:hover {
     transition: .3s ease-in-out;
