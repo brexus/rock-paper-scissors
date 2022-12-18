@@ -73,6 +73,9 @@ function game(){
 
 }
 
+let player_counter = 0;
+let ai_counter = 0;
+
 function getPlayerChoiceClick() {
 
     const rps_button = document.querySelectorAll('[data-element-id="1"]');
@@ -135,9 +138,50 @@ function show_player_choice() {
                 img_container1.append(img);
             }
             ai_choice = show_ai_choice(img_container2, img2);
-            
-            
+            let whoWin = playRound(i, ai_choice);
+
+            if(whoWin == 0) {
+                ai_counter++;
+            } else if(whoWin == 1) {
+                player_counter++;
+            }
+            update_score();
         });
+    }  
+}
+
+function update_score() {
+    const score = document.querySelector('[data-key="3"]');
+    score.innerHTML = `${player_counter}:${ai_counter}`;
+}
+
+function playRound(playerSelection, computerSelection) {
+    if(playerSelection == 0 && computerSelection == 1){
+        return 0;
+    } else if (playerSelection == 0 && computerSelection == 2){
+        return 1;
+
+    } else if (playerSelection == 0 && computerSelection == 0){
+        return 0;
+        
+    } else if (playerSelection == 1 && computerSelection == 0){
+        return 1;
+        
+    } else if (playerSelection == 1 && computerSelection == 2){
+        return 0;
+        
+    } else if (playerSelection == 1 && computerSelection == 1){
+        return 0;
+        
+    } else if (playerSelection == 2 && computerSelection == 0){
+        return 0;
+        
+    } else if (playerSelection == 2 && computerSelection == 1){
+        return 1;
+        
+    } else if (playerSelection == 2 && computerSelection == 2){
+        return 0;
+    } else {
+        return 2;
     }
-    
 }
