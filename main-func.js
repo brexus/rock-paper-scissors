@@ -89,19 +89,55 @@ function getPlayerChoiceClick() {
             
         });
     }
+}
 
-    // rock_button.addEventListener('click', function(e) {
-    //     if(whatIsMarked != "rock") {
-    //         paper_button.classList.remove('marked');
-    //         paper_button.classList.add('unmarked');
-    //         scissors_button.classList.remove('marked');
-    //         scissors_button.classList.add('unmarked');
-    //         console.log("Clicked rock!");
-    //     } 
-    //     whatIsMarked = "rock";
-    //     rock_button.classList.add('marked');
-    // });
+function show_ai_choice(img_container2, img2) {
 
+    let ai_choice = Math.floor(Math.random() * (3 - 0) + 0);
 
+    if(ai_choice == 0) {
+        img2.srcset = "./images/rock2.png"
+        img_container2.append(img2);
+    } else if(ai_choice == 1){
+        img2.srcset = "./images/paper2.png"
+        img_container2.append(img2);
+    } else if(ai_choice == 2){
+        img2.srcset = "./images/scissors2.png"
+        img_container2.append(img2);
+    }
+    return ai_choice;
+}
 
+function show_player_choice() {
+    const buttons = document.querySelectorAll('[data-element-id="1"]');
+
+    const img_container1 = document.querySelector('[data-key="1"]');
+    const img_container2 = document.querySelector('[data-key="2"]');
+
+    const img = document.createElement('img');
+    img.width = "200";
+
+    const img2 = document.createElement('img');
+    img2.width = "200";
+
+    let ai_choice;
+
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener('click', function(e) {
+            if(i == 0) {
+                img.srcset = "./images/rock2.png"
+                img_container1.append(img);
+            } else if(i == 1) {
+                img.srcset = "./images/paper2.png"
+                img_container1.append(img);
+            } else if(i == 2) {
+                img.srcset = "./images/scissors2.png"
+                img_container1.append(img);
+            }
+            ai_choice = show_ai_choice(img_container2, img2);
+            
+            
+        });
+    }
+    
 }

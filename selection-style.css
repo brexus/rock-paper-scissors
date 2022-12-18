@@ -22,12 +22,12 @@
     margin: 8px;
     padding: 10px;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 .rps-container:hover {
     scale: 1.05;
-    border-color: rgb(252, 214, 0);
+    /* border-color: rgb(252, 214, 0); */
 }
 
 .rps-container:active {
