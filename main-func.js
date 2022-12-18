@@ -162,7 +162,7 @@ function playRound(playerSelection, computerSelection) {
         return 1;
 
     } else if (playerSelection == 0 && computerSelection == 0){
-        return 0;
+        return 2;
         
     } else if (playerSelection == 1 && computerSelection == 0){
         return 1;
@@ -180,8 +180,6 @@ function playRound(playerSelection, computerSelection) {
         return 1;
         
     } else if (playerSelection == 2 && computerSelection == 2){
-        return 0;
-    } else {
         return 2;
     }
 }

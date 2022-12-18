@@ -1,3 +1,6 @@
+* {
+    margin: 0;
+}
 .choice-section-100vw {
     display: flex;
     flex-direction: row;
