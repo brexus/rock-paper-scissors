@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/cubano');
 body {
-    background: linear-gradient(176deg,rgb(18,24,27) 50%,rgb(32,39,55) 100%);
+    background-color: #393e46;
     background-attachment: fixed;
     min-height: 100vh;
     font-family: 'Inter', sans-serif;
@@ -17,6 +17,7 @@ body {
     font-family: 'Cubano', sans-serif;
     margin: 0;
     color: rgb(255, 255, 255);
+    background-color: #222831;;
     font-size: 3rem;
     display: flex;
     justify-content: center;}

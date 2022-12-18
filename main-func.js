@@ -118,10 +118,10 @@ function show_player_choice() {
     const img_container2 = document.querySelector('[data-key="2"]');
 
     const img = document.createElement('img');
-    img.width = "200";
+    img.width = "150";
 
     const img2 = document.createElement('img');
-    img2.width = "200";
+    img2.width = "150";
 
     let ai_choice;
 
