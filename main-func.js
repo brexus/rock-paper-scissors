@@ -118,10 +118,14 @@ function show_player_choice() {
     const img_container2 = document.querySelector('[data-key="2"]');
 
     const img = document.createElement('img');
+    img.srcset = "/images/mark.png"
+    img_container1.append(img);
     img.width = "150";
 
     const img2 = document.createElement('img');
     img2.width = "150";
+    img2.srcset = "/images/mark.png"
+    img_container2.append(img2);
 
     let ai_choice;
 
